@@ -2,7 +2,7 @@
 <model ref="r:8a1101ed-962a-4696-a62f-4c748027cca5(SampleSolution.Lecture)">
   <persistence version="9" />
   <languages>
-    <use id="9859e7a1-4876-4909-a664-8a214c206698" name="MetaModel" version="0" />
+    <use id="9859e7a1-4876-4909-a664-8a214c206698" name="MetaModel" version="-1" />
   </languages>
   <imports />
   <registry>
@@ -458,6 +458,394 @@
     <node concept="3_F_VF" id="3J0jhG7K$Cu" role="3_F_jM">
       <ref role="3_F_VE" node="1Y0FibwSlUt" resolve="State" />
       <ref role="3_F_VC" node="3J0jhG7K$C2" resolve="StateSub2" />
+    </node>
+  </node>
+  <node concept="3_Gd4U" id="6pmzvVeXC6h">
+    <property role="TrG5h" value="CinemaService" />
+    <node concept="3_F_VF" id="2ENC6Ukfmzh" role="3_F_jM">
+      <ref role="3_F_VE" node="2ENC6Ukfmvf" resolve="HasIncome" />
+      <ref role="3_F_VC" node="6pmzvVeXC6i" resolve="Cinema" />
+    </node>
+    <node concept="3_F_VF" id="2ENC6Ukfmzm" role="3_F_jM">
+      <ref role="3_F_VE" node="2ENC6Ukfmvf" resolve="HasIncome" />
+      <ref role="3_F_VC" node="2EjtGxbR4Bp" resolve="Room" />
+    </node>
+    <node concept="3_F_VF" id="2ENC6Ukfmzs" role="3_F_jM">
+      <ref role="3_F_VE" node="2ENC6Ukfmvf" resolve="HasIncome" />
+      <ref role="3_F_VC" node="2EjtGxbR4DM" resolve="Movie" />
+    </node>
+    <node concept="3_F_VF" id="2ENC6Ukfmzz" role="3_F_jM">
+      <ref role="3_F_VE" node="2ENC6Ukfmvf" resolve="HasIncome" />
+      <ref role="3_F_VC" node="62z$rXkW99v" resolve="MovieShow" />
+    </node>
+    <node concept="3_F_VF" id="2ENC6UkfmY2" role="3_F_jM">
+      <ref role="3_F_VE" node="2ENC6UkfmQG" resolve="TicketAction" />
+      <ref role="3_F_VC" node="7PEmBM2ZtvA" resolve="Ticket" />
+    </node>
+    <node concept="3_F_VF" id="2ENC6UkfmYb" role="3_F_jM">
+      <ref role="3_F_VE" node="2ENC6UkfmQG" resolve="TicketAction" />
+      <ref role="3_F_VC" node="2ENC6UkfmE2" resolve="TicketState" />
+    </node>
+    <node concept="3_Gd56" id="6pmzvVeXC6i" role="3_Gd4Z">
+      <property role="TrG5h" value="Cinema" />
+      <node concept="2_wlaR" id="6pmzvVeXC6j" role="2_wlle">
+        <property role="3_FBD6" value="name" />
+        <ref role="3_FBDr" node="5H4ykBYMXjQ" resolve="String" />
+      </node>
+    </node>
+    <node concept="3_FBDc" id="6pmzvVeXCbk" role="3_Gd4Z">
+      <property role="TrG5h" value="roomes" />
+      <node concept="2zC0rd" id="6pmzvVeXCcE" role="3_Fx_Q">
+        <property role="2zC0rY" value="1axOPyL0tmr/Containment" />
+        <node concept="2zC6PY" id="6pmzvVeXCcG" role="2zC0rK">
+          <property role="3_FBD6" value="cinema" />
+          <ref role="2zC6PZ" node="6pmzvVeXC6i" resolve="Cinema" />
+        </node>
+      </node>
+      <node concept="2zC27e" id="6pmzvVeXCcK" role="3_Fx_f">
+        <property role="3_FBD6" value="roomes" />
+        <property role="2zC27X" value="1axOPyL0vaw/Set" />
+        <ref role="3_FBDr" node="2EjtGxbR4Bp" resolve="Room" />
+      </node>
+    </node>
+    <node concept="3_FBDc" id="62z$rXkW9kD" role="3_Gd4Z">
+      <property role="TrG5h" value="movies" />
+      <node concept="3_FwNw" id="62z$rXkW9lO" role="3_Fx_Q">
+        <ref role="3_FwNB" node="6pmzvVeXC6i" resolve="Cinema" />
+      </node>
+      <node concept="2zC27e" id="62z$rXkW9lR" role="3_Fx_f">
+        <property role="3_FBD6" value="movies" />
+        <property role="2zC27X" value="1axOPyL0vaw/Set" />
+        <ref role="3_FBDr" node="2EjtGxbR4DM" resolve="Movie" />
+      </node>
+    </node>
+    <node concept="3_Gd56" id="2EjtGxbR4Bp" role="3_Gd4Z">
+      <property role="TrG5h" value="Room" />
+      <node concept="3_Gd5r" id="62z$rXkW9i5" role="3_Gd4E">
+        <property role="3_Gd5q" value="scheduleShow" />
+        <property role="3_Gd5o" value="Tries to schedule a new show." />
+        <property role="3_Gd5t" value="Tries to schedule a new show. Throwns an excepion if start does not fit in existing schedule." />
+        <ref role="3NuQEv" node="1iffewrnuoy" resolve="ScheduleError" />
+        <node concept="3_Gf45" id="1iffewrnuor" role="3_Gf4o">
+          <property role="TrG5h" value="show" />
+          <node concept="BxOjD" id="1iffewrnuov" role="BBx2O">
+            <ref role="BxOjI" node="62z$rXkW99v" resolve="MovieShow" />
+          </node>
+        </node>
+      </node>
+      <node concept="3_Gd5r" id="2ENC6UkfmzJ" role="3_Gd4E">
+        <property role="3_Gd5q" value="open" />
+        <property role="3_Gd5t" value="Opens the room =&gt; Movie Shows are allowed to be scheduled" />
+        <property role="3_Gd5o" value=" " />
+      </node>
+      <node concept="3_Gd5r" id="2ENC6UkfmzO" role="3_Gd4E">
+        <property role="3_Gd5q" value="close" />
+        <property role="3_Gd5o" value=" " />
+        <property role="3_Gd5t" value="Opens the room =&gt; Movie Shows are not allowed to be scheduled" />
+      </node>
+      <node concept="2_wlaR" id="2EjtGxbR4Bx" role="2_wlle">
+        <property role="3_FBD6" value="roomName" />
+        <ref role="3_FBDr" node="5H4ykBYMXjQ" resolve="String" />
+      </node>
+      <node concept="2_wlaR" id="2EjtGxbR4Bz" role="2_wlle">
+        <property role="3_FBD6" value="open" />
+        <ref role="3_FBDr" node="5H4ykBYMXkd" resolve="Boolean" />
+      </node>
+    </node>
+    <node concept="3_FBDc" id="2EjtGxbR4Ep" role="3_Gd4Z">
+      <property role="TrG5h" value="movieShowsOfRoom" />
+      <node concept="2zC0rd" id="2EjtGxbR4F1" role="3_Fx_Q">
+        <property role="2zC0rY" value="1axOPyL0tmr/Containment" />
+        <node concept="2zC6PY" id="2EjtGxbR4F3" role="2zC0rK">
+          <property role="3_FBD6" value="room" />
+          <ref role="2zC6PZ" node="2EjtGxbR4Bp" resolve="Room" />
+        </node>
+      </node>
+      <node concept="2zC27e" id="2EjtGxbR4F7" role="3_Fx_f">
+        <property role="3_FBD6" value="movieShows" />
+        <property role="2zC27X" value="1axOPyL0vaw/Set" />
+        <ref role="3_FBDr" node="62z$rXkW99v" resolve="MovieShow" />
+      </node>
+    </node>
+    <node concept="3_Gd56" id="2EjtGxbR4BQ" role="3_Gd4Z">
+      <property role="TrG5h" value="AbstractRow" />
+      <node concept="2_wlaR" id="2EjtGxbR4Dg" role="2_wlle">
+        <property role="3_FBD6" value="price" />
+        <ref role="3_FBDr" node="5H4ykBYMXjV" resolve="Integer" />
+      </node>
+      <node concept="2_wlaR" id="6PGkbOBa70u" role="2_wlle">
+        <property role="3_FBD6" value="number" />
+        <ref role="3_FBDr" node="5H4ykBYMXjV" resolve="Integer" />
+      </node>
+    </node>
+    <node concept="3_Gd56" id="2EjtGxbR4Ce" role="3_Gd4Z">
+      <property role="TrG5h" value="ParquetRow" />
+    </node>
+    <node concept="3_Gd56" id="2EjtGxbR4CC" role="3_Gd4Z">
+      <property role="TrG5h" value="MiddleRow" />
+    </node>
+    <node concept="3_Gd56" id="2EjtGxbR4D2" role="3_Gd4Z">
+      <property role="TrG5h" value="BackRow" />
+    </node>
+    <node concept="3_FBDc" id="62z$rXkW9gm" role="3_Gd4Z">
+      <property role="TrG5h" value="seatsOfRow" />
+      <node concept="2zC0rd" id="62z$rXkW9hg" role="3_Fx_Q">
+        <property role="2zC0rY" value="1axOPyL0tmr/Containment" />
+        <node concept="2zC6PY" id="62z$rXkW9hi" role="2zC0rK">
+          <property role="3_FBD6" value="row" />
+          <ref role="2zC6PZ" node="2EjtGxbR4BQ" resolve="AbstractRow" />
+        </node>
+      </node>
+      <node concept="2zC27e" id="62z$rXkW9hm" role="3_Fx_f">
+        <property role="3_FBD6" value="seats" />
+        <property role="2zC27X" value="1axOPyL0vaw/Set" />
+        <ref role="3_FBDr" node="62z$rXkW9cI" resolve="Seat" />
+      </node>
+    </node>
+    <node concept="3_Gd56" id="6PGkbOBa6WW" role="3_Gd4Z">
+      <property role="TrG5h" value="User" />
+      <node concept="2_wlaR" id="6PGkbOBa6XO" role="2_wlle">
+        <property role="3_FBD6" value="firstName" />
+        <ref role="3_FBDr" node="5H4ykBYMXjQ" resolve="String" />
+      </node>
+      <node concept="2_wlaR" id="6PGkbOBa6XQ" role="2_wlle">
+        <property role="3_FBD6" value="lastName" />
+        <ref role="3_FBDr" node="5H4ykBYMXjQ" resolve="String" />
+      </node>
+    </node>
+    <node concept="3_Gd56" id="62z$rXkW9cI" role="3_Gd4Z">
+      <property role="TrG5h" value="Seat" />
+      <node concept="3_Gd5r" id="62z$rXkW9hp" role="3_Gd4E">
+        <property role="3_Gd5q" value="price" />
+        <property role="3_Gd5o" value="Price of this seat." />
+        <property role="3_Gd5t" value="Price of this seat. Depends on row." />
+        <node concept="BxOjD" id="62z$rXkW9hr" role="BBx3f">
+          <ref role="BxOjI" node="5H4ykBYMXjV" resolve="Integer" />
+        </node>
+      </node>
+      <node concept="2_wlaR" id="6PGkbOBa70B" role="2_wlle">
+        <property role="3_FBD6" value="number" />
+        <ref role="3_FBDr" node="5H4ykBYMXjV" resolve="Integer" />
+      </node>
+    </node>
+    <node concept="3_Gd56" id="2EjtGxbR4DM" role="3_Gd4Z">
+      <property role="TrG5h" value="Movie" />
+      <node concept="2_wlaR" id="2EjtGxbR4E2" role="2_wlle">
+        <property role="3_FBD6" value="titel" />
+        <ref role="3_FBDr" node="5H4ykBYMXjQ" resolve="String" />
+      </node>
+      <node concept="2_wlaR" id="62z$rXkW99Y" role="2_wlle">
+        <property role="3_FBD6" value="description" />
+        <ref role="3_FBDr" node="5H4ykBYMXjQ" resolve="String" />
+      </node>
+      <node concept="2_wlaR" id="2EjtGxbR4E4" role="2_wlle">
+        <property role="3_FBD6" value="minutes" />
+        <ref role="3_FBDr" node="5H4ykBYMXjV" resolve="Integer" />
+      </node>
+    </node>
+    <node concept="3_Gd56" id="62z$rXkW99v" role="3_Gd4Z">
+      <property role="TrG5h" value="MovieShow" />
+      <node concept="2_wlaR" id="62z$rXkW99T" role="2_wlle">
+        <property role="3_FBD6" value="start" />
+        <ref role="3_FBDr" node="5H4ykBYMXjQ" resolve="String" />
+      </node>
+      <node concept="2_wlaR" id="62z$rXkW99V" role="2_wlle">
+        <property role="3_FBD6" value="end" />
+        <ref role="3_FBDr" node="5H4ykBYMXjQ" resolve="String" />
+      </node>
+      <node concept="2_wlaR" id="62z$rXkW9c1" role="2_wlle">
+        <property role="3_FBD6" value="price" />
+        <ref role="3_FBDr" node="5H4ykBYMXjV" resolve="Integer" />
+      </node>
+      <node concept="2_wlaR" id="2ENC6UkfmC_" role="2_wlle">
+        <property role="3_FBD6" value="threeD" />
+        <ref role="3_FBDr" node="5H4ykBYMXkd" resolve="Boolean" />
+      </node>
+      <node concept="3_Gd5r" id="6PGkbOBa723" role="3_Gd4E">
+        <property role="3_Gd5q" value="reserve" />
+        <property role="3_Gd5o" value="Tries to reserve the provided seat." />
+        <property role="3_Gd5t" value="Throws an exception if already reserved, else returns the price." />
+        <ref role="3NuQEv" node="2EjtGxbR4FS" resolve="SeatAlreadyReservedException" />
+        <node concept="3_Gf45" id="6PGkbOBa724" role="3_Gf4o">
+          <property role="TrG5h" value="seat" />
+          <node concept="BxOjD" id="2ENC6UkfmYp" role="BBx2O">
+            <ref role="BxOjI" node="62z$rXkW9cI" resolve="Seat" />
+          </node>
+        </node>
+        <node concept="3_Gf45" id="6PGkbOBa728" role="3_Gf4o">
+          <property role="TrG5h" value="by" />
+          <node concept="BxOjD" id="6PGkbOBa72x" role="BBx2O">
+            <ref role="BxOjI" node="6PGkbOBa6WW" resolve="User" />
+          </node>
+        </node>
+        <node concept="BxOjD" id="7PEmBM2ZtII" role="BBx3f">
+          <ref role="BxOjI" node="7PEmBM2ZtvA" resolve="Ticket" />
+        </node>
+      </node>
+    </node>
+    <node concept="3_FBDc" id="2ENC6UkfmB2" role="3_Gd4Z">
+      <property role="TrG5h" value="movieShowsOfMovie" />
+      <node concept="2zC0rd" id="2ENC6UkfmCs" role="3_Fx_Q">
+        <node concept="2zC6PY" id="2ENC6UkfmCu" role="2zC0rK">
+          <property role="3_FBD6" value="show" />
+          <ref role="2zC6PZ" node="62z$rXkW99v" resolve="MovieShow" />
+        </node>
+      </node>
+      <node concept="2zC27e" id="2ENC6UkfmCy" role="3_Fx_f">
+        <property role="3_FBD6" value="movie" />
+        <property role="2zC27X" value="5H4ykBYL_dN/List" />
+        <ref role="3_FBDr" node="2EjtGxbR4DM" resolve="Movie" />
+      </node>
+    </node>
+    <node concept="3_Gd56" id="7PEmBM2ZtvA" role="3_Gd4Z">
+      <property role="TrG5h" value="Ticket" />
+      <node concept="3_Gd5r" id="7PEmBM2ZtwN" role="3_Gd4E">
+        <property role="3_Gd5q" value="getPrice" />
+        <property role="3_Gd5o" value="Price of this ticket." />
+        <property role="3_Gd5t" value="Price of this ticket." />
+        <node concept="BxOjD" id="7PEmBM2ZtwP" role="BBx3f">
+          <ref role="BxOjI" node="5H4ykBYMXjV" resolve="Integer" />
+        </node>
+      </node>
+    </node>
+    <node concept="3_F_VF" id="2EjtGxbR4Di" role="3_F_jM">
+      <ref role="3_F_VC" node="2EjtGxbR4Ce" resolve="ParquetRow" />
+      <ref role="3_F_VE" node="2EjtGxbR4BQ" resolve="AbstractRow" />
+    </node>
+    <node concept="3_F_VF" id="2EjtGxbR4Dk" role="3_F_jM">
+      <ref role="3_F_VE" node="2EjtGxbR4BQ" resolve="AbstractRow" />
+      <ref role="3_F_VC" node="2EjtGxbR4CC" resolve="MiddleRow" />
+    </node>
+    <node concept="3_F_VF" id="2EjtGxbR4Dn" role="3_F_jM">
+      <ref role="3_F_VE" node="2EjtGxbR4BQ" resolve="AbstractRow" />
+      <ref role="3_F_VC" node="2EjtGxbR4D2" resolve="BackRow" />
+    </node>
+    <node concept="3_Gd4C" id="6PGkbOBa72r" role="3_G82M">
+      <property role="TrG5h" value="SeatAlreadyBookedException" />
+      <property role="3_Gd4H" value="Seat already booked!" />
+    </node>
+    <node concept="3_Gd4C" id="2EjtGxbR4FS" role="3_G82M">
+      <property role="TrG5h" value="SeatAlreadyReservedException" />
+      <property role="3_Gd4H" value="Seat already reserved!" />
+    </node>
+    <node concept="3_Gd4C" id="1iffewrnuoy" role="3_G82M">
+      <property role="TrG5h" value="ScheduleError" />
+      <property role="3_Gd4H" value="Cant shedule Movie!" />
+    </node>
+    <node concept="3_FBDc" id="2ENC6UkfmWp" role="3_Gd4Z">
+      <property role="TrG5h" value="ticketState" />
+      <node concept="2zC0rd" id="2ENC6UkfmXT" role="3_Fx_Q">
+        <node concept="2zC6PY" id="2ENC6UkfmXV" role="2zC0rK">
+          <property role="3_FBD6" value="ticket" />
+          <ref role="2zC6PZ" node="7PEmBM2ZtvA" resolve="Ticket" />
+        </node>
+      </node>
+      <node concept="2zC27e" id="2ENC6UkfmXZ" role="3_Fx_f">
+        <property role="3_FBD6" value="state" />
+        <ref role="3_FBDr" node="2ENC6UkfmE2" resolve="TicketState" />
+      </node>
+    </node>
+    <node concept="3_Gd56" id="2ENC6UkfmQG" role="3_Gd4Z">
+      <property role="TrG5h" value="TicketAction" />
+      <node concept="3_Gd5r" id="2ENC6UkfmRZ" role="3_Gd4E">
+        <property role="3_Gd5q" value="reserve" />
+        <property role="3e9aca" value="true" />
+        <property role="3_Gd5o" value=" " />
+        <property role="3_Gd5t" value="Tries to reserve." />
+        <node concept="BxOjD" id="2ENC6UkfmS8" role="BBx3f">
+          <ref role="BxOjI" node="2ENC6UkfmE2" resolve="TicketState" />
+        </node>
+      </node>
+      <node concept="3_Gd5r" id="2ENC6UkfmS1" role="3_Gd4E">
+        <property role="3_Gd5q" value="book" />
+        <property role="3_Gd5o" value=" " />
+        <property role="3_Gd5t" value="Tries to book." />
+        <property role="3e9aca" value="true" />
+        <node concept="BxOjD" id="2ENC6UkfmSa" role="BBx3f">
+          <ref role="BxOjI" node="2ENC6UkfmE2" resolve="TicketState" />
+        </node>
+      </node>
+      <node concept="3_Gd5r" id="2ENC6UkfmS4" role="3_Gd4E">
+        <property role="3_Gd5q" value="unreserve" />
+        <property role="3_Gd5o" value=" " />
+        <property role="3_Gd5t" value="Tries to unreserve." />
+        <property role="3e9aca" value="true" />
+        <node concept="BxOjD" id="2ENC6UkfmSc" role="BBx3f">
+          <ref role="BxOjI" node="2ENC6UkfmE2" resolve="TicketState" />
+        </node>
+      </node>
+    </node>
+    <node concept="3_Gd56" id="2ENC6UkfmE2" role="3_Gd4Z">
+      <property role="TrG5h" value="TicketState" />
+    </node>
+    <node concept="3_Gd56" id="2ENC6UkfmGw" role="3_Gd4Z">
+      <property role="TrG5h" value="Available" />
+    </node>
+    <node concept="3_Gd56" id="2ENC6UkfmO8" role="3_Gd4Z">
+      <property role="TrG5h" value="Booked" />
+    </node>
+    <node concept="3_Gd56" id="2ENC6UkfmLA" role="3_Gd4Z">
+      <property role="TrG5h" value="Reserved" />
+    </node>
+    <node concept="3_FBDc" id="7PEmBM2Zt_l" role="3_Gd4Z">
+      <property role="TrG5h" value="ticketsOfMovieShow" />
+      <node concept="2zC0rd" id="7PEmBM2ZtA$" role="3_Fx_Q">
+        <property role="2zC0rY" value="1axOPyL0tmr/Containment" />
+        <node concept="2zC6PY" id="7PEmBM2ZtAA" role="2zC0rK">
+          <property role="3_FBD6" value="movieShow" />
+          <ref role="2zC6PZ" node="62z$rXkW99v" resolve="MovieShow" />
+        </node>
+      </node>
+      <node concept="2zC27e" id="7PEmBM2ZtAE" role="3_Fx_f">
+        <property role="3_FBD6" value="tickets" />
+        <property role="2zC27X" value="1axOPyL0vaw/Set" />
+        <ref role="3_FBDr" node="7PEmBM2ZtvA" resolve="Ticket" />
+      </node>
+    </node>
+    <node concept="3_FBDc" id="7PEmBM2ZtBT" role="3_Gd4Z">
+      <property role="TrG5h" value="ticketsOfUser" />
+      <node concept="2zC0rd" id="7PEmBM2ZtDc" role="3_Fx_Q">
+        <property role="2zC0rY" value="1axOPyL0tmr/Containment" />
+        <node concept="2zC6PY" id="7PEmBM2ZtDe" role="2zC0rK">
+          <property role="3_FBD6" value="by" />
+          <ref role="2zC6PZ" node="6PGkbOBa6WW" resolve="User" />
+        </node>
+      </node>
+      <node concept="2zC27e" id="7PEmBM2ZtDi" role="3_Fx_f">
+        <property role="3_FBD6" value="tickets" />
+        <property role="2zC27X" value="1axOPyL0vaw/Set" />
+        <ref role="3_FBDr" node="7PEmBM2ZtvA" resolve="Ticket" />
+      </node>
+    </node>
+    <node concept="3_FBDc" id="7PEmBM2ZtH3" role="3_Gd4Z">
+      <property role="TrG5h" value="ticketSeat" />
+      <node concept="3_FwNw" id="7PEmBM2ZtIq" role="3_Fx_Q">
+        <ref role="3_FwNB" node="7PEmBM2ZtvA" resolve="Ticket" />
+      </node>
+      <node concept="2zC27e" id="7PEmBM2ZtIt" role="3_Fx_f">
+        <property role="3_FBD6" value="seat" />
+        <ref role="3_FBDr" node="62z$rXkW9cI" resolve="Seat" />
+      </node>
+    </node>
+    <node concept="3_Gd56" id="2ENC6Ukfmvf" role="3_Gd4Z">
+      <property role="TrG5h" value="HasIncome" />
+      <node concept="3_Gd5r" id="2ENC6Ukfmwx" role="3_Gd4E">
+        <property role="3_Gd5q" value="income" />
+        <property role="3e9aca" value="true" />
+        <property role="3_Gd5o" value=" " />
+        <property role="3_Gd5t" value="Calculates an income" />
+        <node concept="BxOjD" id="2ENC6Ukfmwz" role="BBx3f">
+          <ref role="BxOjI" node="5H4ykBYMXjV" resolve="Integer" />
+        </node>
+      </node>
+    </node>
+    <node concept="3_Gd5r" id="2ENC6UkfmzF" role="2_wlaX">
+      <property role="3_Gd5q" value="income" />
+      <property role="3_Gd5t" value="Calculates an income" />
+      <property role="3_Gd5o" value=" " />
+      <node concept="BxOjD" id="2ENC6UkfmzH" role="BBx3f">
+        <ref role="BxOjI" node="5H4ykBYMXjV" resolve="Integer" />
+      </node>
     </node>
   </node>
   <node concept="3_Gd4U" id="5VAzo2B$27G">

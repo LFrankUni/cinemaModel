@@ -1,5 +1,5 @@
-protocolFileDirectory = C:\D\JavaWorkspace\MDEGen\protocols
-javaIDEProjectDirectory = C:/D/JavaWorkspace/MDEGen
+protocolFileDirectory = D:\Studium\Semester5\Cinema\cinema\cinema-model\protocols
+javaIDEProjectDirectory = D:\Studium\Semester5\Cinema\cinema\cinema-model
 databaseURL = jdbc:mysql://localhost:3306
 databaseUser = root
 databasePassword = 
