@@ -533,7 +533,7 @@
     <node concept="3_Gd56" id="2Mk7zYHlN8i" role="3_Gd4Z">
       <property role="TrG5h" value="Cinema" />
       <node concept="2_wlaR" id="2Mk7zYHlN8l" role="2_wlle">
-        <property role="3_FBD6" value="name" />
+        <property role="3_FBD6" value="nameOfCinema" />
         <ref role="3_FBDr" node="5H4ykBYMXjQ" resolve="String" />
       </node>
     </node>
@@ -616,7 +616,7 @@
         <property role="3_Gd5t" value="Closes the room so that no MovieShow can be hosted." />
       </node>
       <node concept="2_wlaR" id="2Mk7zYHlN8w" role="2_wlle">
-        <property role="3_FBD6" value="name" />
+        <property role="3_FBD6" value="nameOfRoom" />
         <ref role="3_FBDr" node="5H4ykBYMXjQ" resolve="String" />
       </node>
       <node concept="2_wlaR" id="2Mk7zYHlN8y" role="2_wlle">
