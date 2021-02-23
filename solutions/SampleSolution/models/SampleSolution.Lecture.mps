@@ -595,7 +595,7 @@
           </node>
         </node>
         <node concept="3_Gf45" id="2Mk7zYHlNwo" role="3_Gf4o">
-          <property role="TrG5h" value="3d" />
+          <property role="TrG5h" value="threeDimensional" />
           <node concept="BxOjD" id="2Mk7zYHlNwy" role="BBx2O">
             <ref role="BxOjI" node="5H4ykBYMXkd" resolve="Boolean" />
           </node>
@@ -645,7 +645,7 @@
       </node>
     </node>
     <node concept="3_FBDc" id="2Mk7zYHlNDL" role="3_Gd4Z">
-      <property role="TrG5h" value="rows" />
+      <property role="TrG5h" value="rowsOfRoom" />
       <node concept="3_FwNw" id="2Mk7zYHlNF9" role="3_Fx_Q">
         <ref role="3_FwNB" node="2Mk7zYHlN8r" resolve="Room" />
       </node>
@@ -695,7 +695,7 @@
         <ref role="3_FBDr" node="5H4ykBYMXjQ" resolve="String" />
       </node>
       <node concept="2_wlaR" id="2Mk7zYHlNbS" role="2_wlle">
-        <property role="3_FBD6" value="3d" />
+        <property role="3_FBD6" value="threeDimensional" />
         <ref role="3_FBDr" node="5H4ykBYMXkd" resolve="Boolean" />
       </node>
       <node concept="2_wlaR" id="2Mk7zYHlNbW" role="2_wlle">
