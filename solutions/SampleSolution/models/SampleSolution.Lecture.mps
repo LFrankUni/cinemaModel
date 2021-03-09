@@ -603,6 +603,16 @@
         <ref role="BxOjI" node="5H4ykBYMXjV" resolve="Integer" />
       </node>
     </node>
+    <node concept="3_Gd5r" id="1U0z7$kHwRX" role="2_wlaX">
+      <property role="3_Gd5q" value="getAllRowCategories" />
+      <property role="3_Gd5o" value=" " />
+      <property role="3_Gd5t" value="Returns all categories." />
+      <ref role="3NuQEv" node="6ec7PRFr568" resolve="ModelException" />
+      <node concept="BxOjD" id="1U0z7$kHwSj" role="BBx3f">
+        <property role="BFjhQ" value="true" />
+        <ref role="BxOjI" node="2Mk7zYHlNdi" resolve="RowCategory" />
+      </node>
+    </node>
     <node concept="3_Gd56" id="2Mk7zYHlN8i" role="3_Gd4Z">
       <property role="TrG5h" value="Cinema" />
       <node concept="2_wlaR" id="2Mk7zYHlN8l" role="2_wlle">
@@ -662,6 +672,24 @@
             <ref role="BxOjI" node="2Mk7zYHlNa9" resolve="Movie" />
           </node>
         </node>
+        <node concept="BxOjD" id="6I6wV8hBDnU" role="BBx3f">
+          <ref role="BxOjI" node="2Mk7zYHlNa9" resolve="Movie" />
+        </node>
+      </node>
+      <node concept="3_Gd5r" id="6I6wV8hBDnq" role="3_Gd4E">
+        <property role="3_Gd5q" value="addRoom" />
+        <property role="3_Gd5o" value=" " />
+        <property role="3_Gd5t" value="Adds a new Room to this cinema." />
+        <ref role="3NuQEv" node="6ec7PRFr568" resolve="ModelException" />
+        <node concept="3_Gf45" id="6I6wV8hBDnD" role="3_Gf4o">
+          <property role="TrG5h" value="name" />
+          <node concept="BxOjD" id="6I6wV8hBDnH" role="BBx2O">
+            <ref role="BxOjI" node="5H4ykBYMXjQ" resolve="String" />
+          </node>
+        </node>
+        <node concept="BxOjD" id="6I6wV8hBDnS" role="BBx3f">
+          <ref role="BxOjI" node="2Mk7zYHlN8r" resolve="Room" />
+        </node>
       </node>
     </node>
     <node concept="3_FBDc" id="2Mk7zYHlN8G" role="3_Gd4Z">
@@ -693,15 +721,24 @@
         <property role="3_Gd5o" value=" " />
         <property role="3_Gd5t" value="Adds a row to the Room." />
         <ref role="3NuQEv" node="6ec7PRFr568" resolve="ModelException" />
-        <node concept="3_Gf45" id="2Mk7zYHlNQe" role="3_Gf4o">
-          <property role="TrG5h" value="row" />
-          <node concept="BxOjD" id="2Mk7zYHlNQu" role="BBx2O">
-            <ref role="BxOjI" node="2Mk7zYHlNcp" resolve="AbstractRow" />
+        <node concept="3_Gf45" id="10nHYEZGy6G" role="3_Gf4o">
+          <property role="TrG5h" value="name" />
+          <node concept="BxOjD" id="10nHYEZGy6K" role="BBx2O">
+            <ref role="BxOjI" node="5H4ykBYMXjQ" resolve="String" />
           </node>
+        </node>
+        <node concept="3_Gf45" id="10nHYEZGy6P" role="3_Gf4o">
+          <property role="TrG5h" value="category" />
+          <node concept="BxOjD" id="10nHYEZGygt" role="BBx2O">
+            <ref role="BxOjI" node="2Mk7zYHlNdi" resolve="RowCategory" />
+          </node>
+        </node>
+        <node concept="BxOjD" id="10nHYEZGy6N" role="BBx3f">
+          <ref role="BxOjI" node="2Mk7zYHlNcp" resolve="RoomRow" />
         </node>
       </node>
       <node concept="3_Gd5r" id="2Mk7zYHlN9M" role="3_Gd4E">
-        <property role="3_Gd5q" value="scheduleMovieShow" />
+        <property role="3_Gd5q" value="scheduleMovieShows" />
         <property role="3_Gd5o" value=" " />
         <property role="3_Gd5t" value="Schedules a MovieShow if schedule is free." />
         <ref role="3NuQEv" node="6ec7PRFr568" resolve="ModelException" />
@@ -718,9 +755,9 @@
           </node>
         </node>
         <node concept="3_Gf45" id="2Mk7zYHlNwd" role="3_Gf4o">
-          <property role="TrG5h" value="end" />
-          <node concept="BxOjD" id="2Mk7zYHlNwl" role="BBx2O">
-            <ref role="BxOjI" node="5H4ykBYMXjQ" resolve="String" />
+          <property role="TrG5h" value="days" />
+          <node concept="BxOjD" id="10nHYEZGygE" role="BBx2O">
+            <ref role="BxOjI" node="5H4ykBYMXjV" resolve="Integer" />
           </node>
         </node>
         <node concept="3_Gf45" id="2Mk7zYHlNwo" role="3_Gf4o">
@@ -736,6 +773,7 @@
           </node>
         </node>
         <node concept="BxOjD" id="2Mk7zYHlNwO" role="BBx3f">
+          <property role="BFjhQ" value="true" />
           <ref role="BxOjI" node="2Mk7zYHlNaP" resolve="MovieShow" />
         </node>
       </node>
@@ -765,7 +803,8 @@
         <property role="3_Gd5t" value="Returns all rows of this room." />
         <ref role="3NuQEv" node="6ec7PRFr568" resolve="ModelException" />
         <node concept="BxOjD" id="10nHYEZGy6D" role="BBx3f">
-          <ref role="BxOjI" node="2Mk7zYHlNcp" resolve="AbstractRow" />
+          <property role="BFjhQ" value="true" />
+          <ref role="BxOjI" node="2Mk7zYHlNcp" resolve="RoomRow" />
         </node>
       </node>
     </node>
@@ -792,7 +831,7 @@
       <node concept="2zC27e" id="2Mk7zYHlNFc" role="3_Fx_f">
         <property role="3_FBD6" value="rows" />
         <property role="2zC27X" value="1axOPyL0vaw/Set" />
-        <ref role="3_FBDr" node="2Mk7zYHlNcp" resolve="AbstractRow" />
+        <ref role="3_FBDr" node="2Mk7zYHlNcp" resolve="RoomRow" />
       </node>
     </node>
     <node concept="3_Gd56" id="2Mk7zYHlNa9" role="3_Gd4Z">
@@ -908,26 +947,36 @@
       </node>
     </node>
     <node concept="3_Gd56" id="2Mk7zYHlNcp" role="3_Gd4Z">
-      <property role="TrG5h" value="AbstractRow" />
+      <property role="TrG5h" value="RoomRow" />
       <node concept="2_wlaR" id="2Mk7zYHlNcM" role="2_wlle">
         <property role="3_FBD6" value="name" />
         <ref role="3_FBDr" node="5H4ykBYMXjQ" resolve="String" />
       </node>
-      <node concept="2_wlaR" id="2Mk7zYHlNcO" role="2_wlle">
-        <property role="3_FBD6" value="priceInCent" />
-        <ref role="3_FBDr" node="5H4ykBYMXjV" resolve="Integer" />
-      </node>
       <node concept="3_Gd5r" id="2Mk7zYHlNQx" role="3_Gd4E">
-        <property role="3_Gd5q" value="addSeat" />
+        <property role="3_Gd5q" value="addSeats" />
         <property role="3_Gd5o" value=" " />
         <property role="3_Gd5t" value="Adds a seat to the row." />
         <ref role="3NuQEv" node="6ec7PRFr568" resolve="ModelException" />
         <node concept="3_Gf45" id="2Mk7zYHlNQz" role="3_Gf4o">
-          <property role="TrG5h" value="seat" />
-          <node concept="BxOjD" id="2Mk7zYHlNQB" role="BBx2O">
-            <ref role="BxOjI" node="2Mk7zYHlNh2" resolve="Seat" />
+          <property role="TrG5h" value="number" />
+          <node concept="BxOjD" id="J9fbPzqndu" role="BBx2O">
+            <ref role="BxOjI" node="5H4ykBYMXjV" resolve="Integer" />
           </node>
         </node>
+        <node concept="BxOjD" id="6I6wV8hBDnW" role="BBx3f">
+          <property role="BFjhQ" value="true" />
+          <ref role="BxOjI" node="2Mk7zYHlNh2" resolve="Seat" />
+        </node>
+      </node>
+    </node>
+    <node concept="3_FBDc" id="10nHYEZGydQ" role="3_Gd4Z">
+      <property role="TrG5h" value="rowToCategory" />
+      <node concept="3_FwNw" id="10nHYEZGyg6" role="3_Fx_Q">
+        <ref role="3_FwNB" node="2Mk7zYHlNcp" resolve="RoomRow" />
+      </node>
+      <node concept="2zC27e" id="10nHYEZGyg9" role="3_Fx_f">
+        <property role="3_FBD6" value="category" />
+        <ref role="3_FBDr" node="2Mk7zYHlNdi" resolve="RowCategory" />
       </node>
     </node>
     <node concept="3_FBDc" id="2Mk7zYHlNGz" role="3_Gd4Z">
@@ -936,7 +985,7 @@
         <property role="2zC0rY" value="1axOPyL0tmr/Containment" />
         <node concept="2zC6PY" id="2Mk7zYHlNI0" role="2zC0rK">
           <property role="3_FBD6" value="row" />
-          <ref role="2zC6PZ" node="2Mk7zYHlNcp" resolve="AbstractRow" />
+          <ref role="2zC6PZ" node="2Mk7zYHlNcp" resolve="RoomRow" />
         </node>
       </node>
       <node concept="2zC27e" id="2Mk7zYHlNI4" role="3_Fx_f">
@@ -956,13 +1005,15 @@
       </node>
     </node>
     <node concept="3_Gd56" id="2Mk7zYHlNdi" role="3_Gd4Z">
-      <property role="TrG5h" value="ParquetRow" />
-    </node>
-    <node concept="3_Gd56" id="2Mk7zYHlNea" role="3_Gd4Z">
-      <property role="TrG5h" value="MiddleRow" />
-    </node>
-    <node concept="3_Gd56" id="2Mk7zYHlNf4" role="3_Gd4Z">
-      <property role="TrG5h" value="BackRow" />
+      <property role="TrG5h" value="RowCategory" />
+      <node concept="2_wlaR" id="10nHYEZGyba" role="2_wlle">
+        <property role="3_FBD6" value="name" />
+        <ref role="3_FBDr" node="5H4ykBYMXjQ" resolve="String" />
+      </node>
+      <node concept="2_wlaR" id="10nHYEZGybc" role="2_wlle">
+        <property role="3_FBD6" value="priceInCents" />
+        <ref role="3_FBDr" node="5H4ykBYMXjV" resolve="Integer" />
+      </node>
     </node>
     <node concept="3_Gd56" id="2Mk7zYHlNh2" role="3_Gd4Z">
       <property role="TrG5h" value="Seat" />
@@ -996,7 +1047,7 @@
       <property role="TrG5h" value="TicketsOfUser" />
       <node concept="2zC0rd" id="10nHYEZGy6w" role="3_Fx_Q">
         <node concept="2zC6PY" id="10nHYEZGy6y" role="2zC0rK">
-          <property role="3_FBD6" value="ticket" />
+          <property role="3_FBD6" value="tickets" />
           <ref role="2zC6PZ" node="2Mk7zYHlNi3" resolve="Ticket" />
         </node>
       </node>
@@ -1113,18 +1164,6 @@
           <ref role="BxOjI" node="5H4ykBYMXjV" resolve="Integer" />
         </node>
       </node>
-    </node>
-    <node concept="3_F_VF" id="2Mk7zYHlNOf" role="3_F_jM">
-      <ref role="3_F_VE" node="2Mk7zYHlNcp" resolve="AbstractRow" />
-      <ref role="3_F_VC" node="2Mk7zYHlNdi" resolve="ParquetRow" />
-    </node>
-    <node concept="3_F_VF" id="2Mk7zYHlNOh" role="3_F_jM">
-      <ref role="3_F_VE" node="2Mk7zYHlNcp" resolve="AbstractRow" />
-      <ref role="3_F_VC" node="2Mk7zYHlNea" resolve="MiddleRow" />
-    </node>
-    <node concept="3_F_VF" id="2Mk7zYHlNOk" role="3_F_jM">
-      <ref role="3_F_VE" node="2Mk7zYHlNcp" resolve="AbstractRow" />
-      <ref role="3_F_VC" node="2Mk7zYHlNf4" resolve="BackRow" />
     </node>
     <node concept="3_F_VF" id="2Mk7zYHlNOo" role="3_F_jM">
       <ref role="3_F_VE" node="2Mk7zYHlNsP" resolve="HasIncome" />

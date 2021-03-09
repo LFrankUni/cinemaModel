@@ -1,1 +1,1 @@
-AbstractRow
+HasIncome
