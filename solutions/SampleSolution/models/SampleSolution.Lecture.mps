@@ -1089,6 +1089,15 @@
         <property role="3_FBD6" value="number" />
         <ref role="3_FBDr" node="5H4ykBYMXjV" resolve="Integer" />
       </node>
+      <node concept="3_Gd5r" id="5ymH2MjCIRV" role="3_Gd4E">
+        <property role="3_Gd5q" value="getTheRow" />
+        <property role="3_Gd5o" value=" " />
+        <property role="3_Gd5t" value=" " />
+        <ref role="3NuQEv" node="6ec7PRFr568" resolve="ModelException" />
+        <node concept="BxOjD" id="5ymH2MjCIRX" role="BBx3f">
+          <ref role="BxOjI" node="2Mk7zYHlNcp" resolve="RoomRow" />
+        </node>
+      </node>
     </node>
     <node concept="3_Gd56" id="2Mk7zYHlNi3" role="3_Gd4Z">
       <property role="TrG5h" value="Ticket" />
@@ -1108,6 +1117,24 @@
         <ref role="3NuQEv" node="6ec7PRFr568" resolve="ModelException" />
         <node concept="BxOjD" id="7l8inrhbHw9" role="BBx3f">
           <ref role="BxOjI" node="2Mk7zYHlNh2" resolve="Seat" />
+        </node>
+      </node>
+      <node concept="3_Gd5r" id="5ymH2MjCIRZ" role="3_Gd4E">
+        <property role="3_Gd5q" value="getTheState" />
+        <property role="3_Gd5o" value=" " />
+        <property role="3_Gd5t" value=" " />
+        <ref role="3NuQEv" node="6ec7PRFr568" resolve="ModelException" />
+        <node concept="BxOjD" id="5ymH2MjCIS5" role="BBx3f">
+          <ref role="BxOjI" node="5H4ykBYMXjQ" resolve="String" />
+        </node>
+      </node>
+      <node concept="3_Gd5r" id="61JqxjumXjy" role="3_Gd4E">
+        <property role="3_Gd5q" value="getTheUser" />
+        <property role="3_Gd5o" value=" " />
+        <property role="3_Gd5t" value=" " />
+        <ref role="3NuQEv" node="6ec7PRFr568" resolve="ModelException" />
+        <node concept="BxOjD" id="61JqxjumXjE" role="BBx3f">
+          <ref role="BxOjI" node="2Mk7zYHlNj8" resolve="User" />
         </node>
       </node>
     </node>
@@ -1210,6 +1237,15 @@
     </node>
     <node concept="3_Gd56" id="2Mk7zYHlNlA" role="3_Gd4Z">
       <property role="TrG5h" value="TicketState" />
+      <node concept="3_Gd5r" id="5ymH2MjCIS7" role="3_Gd4E">
+        <property role="3_Gd5q" value="toString" />
+        <property role="3_Gd5o" value=" " />
+        <property role="3_Gd5t" value=" " />
+        <property role="3e9aca" value="true" />
+        <node concept="BxOjD" id="5ymH2MjCIS9" role="BBx3f">
+          <ref role="BxOjI" node="5H4ykBYMXjQ" resolve="String" />
+        </node>
+      </node>
     </node>
     <node concept="3_Gd56" id="2Mk7zYHlNor" role="3_Gd4Z">
       <property role="TrG5h" value="Available" />
