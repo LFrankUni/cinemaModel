@@ -740,6 +740,28 @@
     </node>
     <node concept="3_Gd56" id="2Mk7zYHlN8r" role="3_Gd4Z">
       <property role="TrG5h" value="Room" />
+      <node concept="3_Gd5r" id="50PECClYgUl" role="3_Gd4E">
+        <property role="3_Gd5q" value="getScheduledMovieShows" />
+        <property role="3_Gd5o" value=" " />
+        <property role="3_Gd5t" value="Returns all movie shows between from and to (inclusive)." />
+        <ref role="3NuQEv" node="6ec7PRFr568" resolve="ModelException" />
+        <node concept="3_Gf45" id="50PECClYgUm" role="3_Gf4o">
+          <property role="TrG5h" value="from" />
+          <node concept="BxOjD" id="50PECClYgUn" role="BBx2O">
+            <ref role="BxOjI" node="5H4ykBYMXjQ" resolve="String" />
+          </node>
+        </node>
+        <node concept="3_Gf45" id="50PECClYgUo" role="3_Gf4o">
+          <property role="TrG5h" value="to" />
+          <node concept="BxOjD" id="50PECClYgUp" role="BBx2O">
+            <ref role="BxOjI" node="5H4ykBYMXjQ" resolve="String" />
+          </node>
+        </node>
+        <node concept="BxOjD" id="50PECClYgUq" role="BBx3f">
+          <property role="BFjhQ" value="true" />
+          <ref role="BxOjI" node="2Mk7zYHlNaP" resolve="MovieShow" />
+        </node>
+      </node>
       <node concept="3_Gd5r" id="2Mk7zYHlNPY" role="3_Gd4E">
         <property role="3_Gd5q" value="addRow" />
         <property role="3_Gd5o" value=" " />
@@ -1155,7 +1177,7 @@
     <node concept="3_FBDc" id="2Mk7zYHlNMz" role="3_Gd4Z">
       <property role="TrG5h" value="TicketToState" />
       <node concept="2zC0rd" id="2Mk7zYHlNO6" role="3_Fx_Q">
-        <property role="2zC0rY" value="1axOPyL0tmr/Containment" />
+        <property role="2zC0rY" value="1axOPyL0tmn/Injective" />
         <node concept="2zC6PY" id="2Mk7zYHlNO8" role="2zC0rK">
           <property role="3_FBD6" value="ticket" />
           <ref role="2zC6PZ" node="2Mk7zYHlNi3" resolve="Ticket" />
